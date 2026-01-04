@@ -27,11 +27,15 @@ latest_posts:
 I am a Master's student majoring in Applied Mathematics at Aalto University, where I have also completed my BSc in Science and Technology (major in Mathematics and System Sciences). My academic interests have mostly focused on applying mathematics to real world problems in the form of optimization, statistical inference or machine learning.
 
 I have spent the last few years as a research and teaching assistant working on a mix of machine learning and statistical physics projects:
-* **Research Assitant | Probabilistic Machine Learning Group (Aalto, Department of Computer Science)** 
-  I built an experiment framework for **Calibrated Bayesian Optimization** with a focus on investigating the most relevant metrics for measuring the performance of calibrated BO. I also performed ablation studies and performance comparisons on existing literature.
-* **Research Assistant | Complex Systems and Materials Group (Aalto Department of Applied Physics)**
-  I developed **Gaussian Process Regression (GPR)** models to reconstruct 3D data in Atom Probe Tomography (APT). As a result of this work, I first-authored a research manuscript (currently under review) detailing the GPR approach to APT data reconstruction.
-* **Teaching Assitant | Department of Mathematics and System Analysis**
+
+**Research Assistant** 
+*Aalto University, Department of Computer Science, Probabilistic Machine Learning Group*
+* I built an experiment framework for **Calibrated Bayesian Optimization** with a focus on investigating the most relevant metrics for measuring the performance of calibrated BO. I also performed ablation studies and performance comparisons on existing literature.
+
+**Research Assistant** *Aalto University, Department of Applied Physics, Complex Systems and Materials Group*
+* I developed **Gaussian Process Regression (GPR)** models to reconstruct 3D data in Atom Probe Tomography (APT). As a result of this work, I first-authored a research manuscript (currently under review) detailing the GPR approach to APT data reconstruction.
+
+**Teaching Assistant** *Aalto University, Department of Mathematics and Systems Analysis*
   * Statistical Inference (MS-C1620)
   * Calculus 1 (MS-A0107)
   * A First Course in Probability and Statistics (MS-A0502)
