@@ -409,14 +409,14 @@ ninja.data = [{
             },},{id: "news-my-work-from-the-summer-of-2024-at-the-complex-systems-and-materials-group-has-culminated-in-a-research-manuscript-which-is-now-under-review",
           title: 'My work from the summer of 2024 at the Complex Systems and Materials...',
           description: "",
-          section: "News",},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+          section: "News",},{id: "projects-gaussian-process-regression-applied-to-atom-probe-tomography-data-reconstruction",
+          title: 'Gaussian Process Regression Applied to Atom Probe Tomography Data Reconstruction',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/APT_with_GPR/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-investigation-into-online-calibrated-bayesian-optimization",
+          title: 'Investigation into Online Calibrated Bayesian Optimization',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/calibrated_BO/";
             },},{id: "projects-sustainable-finance-in-the-quantum-era-hackathon",
