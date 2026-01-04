@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Investigation into Online Calibrated Bayesian Optimization
+description:
+img: assets/img/online_calib_illustration.jpg
 importance: 2
 category: work
 giscus_comments: true

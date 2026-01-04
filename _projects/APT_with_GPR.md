@@ -1,9 +1,8 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Gaussian Process Regression Applied to Atom Probe Tomography Data Reconstruction
+description:
+img: assets/img/GPR_APT_illustration.jpg
 importance: 3
 category: work
 ---
