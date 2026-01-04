@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We won the Sustainable Finance in the Quantum Era Hackathon! Read more about the project [here](/projects/quantum_hackathon/).
+[We won the Sustainable Finance in the Quantum Era Hackathon!](/projects/quantum_hackathon/).

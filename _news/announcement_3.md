@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My work from the summer of 2024 at the Complex Systems and Materials Group has culminated in a research manuscript which is now under review. More on the project [here](/projects/APT_with_GPR/).
+[My work from the summer of 2024 at the Complex Systems and Materials Group has culminated in a research manuscript which is now under review.](/projects/APT_with_GPR/).

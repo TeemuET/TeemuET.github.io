@@ -6,4 +6,4 @@ inline: false
 related_posts: false
 ---
 
-I finished my summer internship at the Probabibilistc Machine Learning Group. More details and illustrations related to my work can be found [here](/projects/calibrated_BO/).
+[I finished my summer internship at the Probabibilistc Machine Learning Group.](/projects/calibrated_BO/).
