@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "Blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
-        },{id: "nav-projects",
+  },{id: "nav-projects",
           title: "Projects",
           description: "Brief overviews of projects that I have worked on.",
           section: "Navigation",
@@ -405,16 +398,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-long-announcement-with-details",
+            },},{id: "news-we-won-the-sustainable-finance-in-the-quantum-era-hackathon-read-more-about-the-project-here",
+          title: 'We won the Sustainable Finance in the Quantum Era Hackathon! Read more about...',
+          description: "",
+          section: "News",},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-we-won-the-sustainable-finance-in-the-quantum-era-hackathon-read-more-about-the-project-here",
-          title: 'We won the Sustainable Finance in the Quantum Era Hackathon! Read more about...',
+            },},{id: "news-my-work-from-the-summer-of-2024-at-the-complex-systems-and-materials-group-has-culminated-in-a-research-manuscript-which-is-now-under-review-more-on-the-project-here",
+          title: 'My work from the summer of 2024 at the Complex Systems and Materials...',
           description: "",
           section: "News",},{id: "projects-project-3-with-very-long-name",
           title: 'project 3 with very long name',
@@ -432,39 +425,25 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/quantum_hackathon/";
             },},{
-        id: 'social-cv',
-        title: 'CV',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/example_pdf.pdf", "_blank");
+          window.open("https://www.linkedin.com/in/teemu-turpeinen-82b39925b", "_blank");
         },
       },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%74%65%65%6D%75.%65.%74%75%72%70%65%69%6E%65%6E@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+          window.open("https://github.com/TeemuET", "_blank");
         },
       },{
         id: 'social-custom_social',
