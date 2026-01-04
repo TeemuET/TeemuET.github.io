@@ -398,15 +398,15 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-we-won-the-sustainable-finance-in-the-quantum-era-hackathon-read-more-about-the-project-here",
-          title: 'We won the Sustainable Finance in the Quantum Era Hackathon! Read more about...',
+            },},{id: "news-we-won-the-sustainable-finance-in-the-quantum-era-hackathon",
+          title: 'We won the Sustainable Finance in the Quantum Era Hackathon!.',
           description: "",
           section: "News",},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-my-work-from-the-summer-of-2024-at-the-complex-systems-and-materials-group-has-culminated-in-a-research-manuscript-which-is-now-under-review-more-on-the-project-here",
+            },},{id: "news-my-work-from-the-summer-of-2024-at-the-complex-systems-and-materials-group-has-culminated-in-a-research-manuscript-which-is-now-under-review",
           title: 'My work from the summer of 2024 at the Complex Systems and Materials...',
           description: "",
           section: "News",},{id: "projects-project-3-with-very-long-name",
@@ -444,13 +444,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/TeemuET", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },{
       id: 'light-theme',
