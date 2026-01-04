@@ -2,7 +2,7 @@
 layout: page
 title: Sustainable Finance in the Quantum Era Hackathon
 description: An overview of our winning project in the hackathon.
-img: assets/img/illustrative_pitch.pdf
+img: assets/img/illustrative_pitch.jpg
 importance: 1
 category: work
 related_publications: true
