@@ -399,7 +399,7 @@ ninja.data = [{
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
             },},{id: "news-we-won-the-sustainable-finance-in-the-quantum-era-hackathon",
-          title: 'We won the Sustainable Finance in the Quantum Era Hackathon!.',
+          title: 'We won the Sustainable Finance in the Quantum Era Hackathon!',
           description: "",
           section: "News",},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
