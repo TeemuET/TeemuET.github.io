@@ -8,7 +8,17 @@ category: work
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Intro
+During the summer of 2025 I got the opportunity to work for the Probabilistic Machine Learning Group (Aalto Department of Computer Science) under the supervision of Samuel Kaski and Marshal Sinaga. My internship aimed at finding and identifying promising avenues in improving robustness of Bayesian Optimization (BO). 
 
+BO is an optimization method... brief description of BO
+
+During the internship I covered a large amount of literature which included topics such as calibration and conformal prediction in the context of BO.
+
+## Objective
+After identifying stuff.... about literature. We settled for the following research questions.
+
+## Results roughly
+
+## Final Presentation
+The final presentation of my work can be seen b..
