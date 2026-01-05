@@ -13,9 +13,7 @@ related_publications: true
 
  I was a part of a winning team at the Ultrahack hackathon titled "Sustainable Finance in the Quantum Era". In approximately 36 hours, I and my 4 teammates were able to formulate a business idea and excecute a technical implementation behind the concept. Our solution was a portfolio optimization and prediction platform intended to be integrated into a stock broker's website. We implemented both a classical optimization algorithm and one with Quantum Computing based on a [Nature article](https://www.nature.com/articles/s41598-023-45392-w) {% cite buonaiuto_best_2023 %}. We also implemented a prediction tool based on geometric brownian motion and the Monte Carlo method and incorporated impact data and ESG scoring from [The Upright Project](https://www.uprightproject.com/?utm_source=google&utm_medium=search&utm_campaign=brand&utm_term=upright%20project&utm_campaign=CSR+%7C+manual&utm_source=adwords&utm_medium=ppc&hsa_acc=3032378754&hsa_cam=20030909980&hsa_grp=168345597304&hsa_ad=697647931150&hsa_src=g&hsa_tgt=kwd-569608573151&hsa_kw=upright%20project&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=20030909980&gclid=CjwKCAiA3-3KBhBiEiwA2x7FdMO5tp6HVncIDfTt4lAR0laSYWvHlmEFc5HWShy0d2cf8XhQX6xVcxoCZUsQAvD_BwE). My main area of responsibility was on the technical implementation and the implementing the research article in practice.
 
-## Techinal details
-
-### Objective
+## Objective
 
 The core problem in sustainable finance is balancing Alpha (returns), Risk, and Impact (beliefs and values of the investor). Our implementation was designed for integration into retail brokerages so that investors could automate this optimization. By leveraging Quantum Computing, we provided a glimpse into the future of high-dimensional portfolio management where classical solvers begin to struggle.
 
@@ -30,14 +28,19 @@ $$
 
 where $\mu$ is the vector of mean asset returns for each asset $i$, $\Sigma$ is the covariance matrix between returns of different assets, $q$ is a parameter expressing the risk attitude of the investor and $\gamma$ a parameter expressing the weight of sustainability relative to financial returns.
 
-### Methods
-This optimization problem can be classically solved with Sequential Quadratic Programming (SQP). Brief description.
+## Methods
+For our classical benchmark, we used Sequential Quadratic Programming (SQP) to find exact solutions for the continuous variable problem. This provides a robust baseline for portfolios with a limited number of assets. To make the problem solvable for a quantum processor, we followed the methodology of Buonaiuto et al. (2023) to transform our constrained model into a Quadratic Unconstrained Binary Optimization (QUBO) form.
 
-In the Quantum version we modify the problem into a QUBO as detailed in {% cite buonaiuto_best_2023 %}. This problem is then solved using the VQE...
+## Forecasts
+To provide users with a forward-looking view of their optimized portfolio, we implemented a simulation engine to model future asset price trajectories.
 
-### Forecasts
-The forecasts for mean asset returns were simulated by using the .... model:
+We used Geometric Brownian Motion (GBM) to model the price evolution of the selected assets. The price $S_t$​ is assumed to follow the stochastic differential equation
 
+$$
+dS_t=\mu S_t dt+\sigma S_t dW_t,
+$$
+
+where $\mu$ is the drift (expected return), $\sigma$ the volatility and $W_t$ is a Wiener process. By running Monte Carlo simulations, we generated a probability distribution of final portfolio values. This allowed us to calculate the Value at Risk (VaR) and provide a confidence interval for the portfolio's future ESG impact.
 
 ## Pitch
 
