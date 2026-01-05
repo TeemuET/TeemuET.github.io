@@ -5,7 +5,6 @@ description: An overview of my work at the Probabilistic Machine Learning Group,
 img: assets/img/online_calib_illustration.jpg
 importance: 2
 category: work
-giscus_comments: true
 ---
 
 ## Intro
