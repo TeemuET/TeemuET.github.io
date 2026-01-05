@@ -401,12 +401,10 @@ ninja.data = [{
             },},{id: "news-we-won-the-sustainable-finance-in-the-quantum-era-hackathon",
           title: 'We won the Sustainable Finance in the Quantum Era Hackathon!',
           description: "",
-          section: "News",},{id: "news-announcement-2",
-          title: 'Announcement_2',
+          section: "News",},{id: "news-i-finished-my-summer-internship-at-the-probabibilistc-machine-learning-group",
+          title: 'I finished my summer internship at the Probabibilistc Machine Learning Group.',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-my-work-from-the-summer-of-2024-at-the-complex-systems-and-materials-group-has-culminated-in-a-research-manuscript-which-is-now-under-review",
+          section: "News",},{id: "news-my-work-from-the-summer-of-2024-at-the-complex-systems-and-materials-group-has-culminated-in-a-research-manuscript-which-is-now-under-review",
           title: 'My work from the summer of 2024 at the Complex Systems and Materials...',
           description: "",
           section: "News",},{id: "projects-gaussian-process-regression-applied-to-atom-probe-tomography-data-reconstruction",
