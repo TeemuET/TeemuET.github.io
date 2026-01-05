@@ -15,6 +15,8 @@ related_publications: true
 
 ## Techinal details
 
+### Objective
+
 The core problem in sustainable finance is balancing Alpha (returns), Risk, and Impact (beliefs and values of the investor). Our implementation was designed for integration into retail brokerages so that investors could automate this optimization. By leveraging Quantum Computing, we provided a glimpse into the future of high-dimensional portfolio management where classical solvers begin to struggle.
 
 The core of our solution is a Multi-Objective Portfolio Optimization model. While the traditional Markowitz model balances expected return against variance (risk), our platform introduces a third dimension: Net Impact Score (sourced from the Upright Project). The goal is to find an optimal investment allocation vector $x$ that maximizes the objective function that combines expected returns, variance and impact. The optimization problem can be summarized as follows
@@ -28,9 +30,14 @@ $$
 
 where $\mu$ is the vector of mean asset returns for each asset $i$, $\Sigma$ is the covariance matrix between returns of different assets, $q$ is a parameter expressing the risk attitude of the investor and $\gamma$ a parameter expressing the weight of sustainability relative to financial returns.
 
-classical vs quantum
+### Methods
+This optimization problem can be classically solved with Sequential Quadratic Programming (SQP). Brief description.
 
-prediction of return distributions
+In the Quantum version we modify the problem into a QUBO as detailed in {% cite buonaiuto_best_2023 %}. This problem is then solved using the VQE...
+
+### Forecasts
+The forecasts for mean asset returns were simulated by using the .... model:
+
 
 ## Pitch
 
