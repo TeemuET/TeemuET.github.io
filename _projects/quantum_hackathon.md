@@ -5,7 +5,6 @@ description: An overview of our winning project in the hackathon.
 img: assets/img/illustrative_pitch.jpg
 importance: 1
 category: work
-bootstrap: true
 related_publications: true
 ---
 
@@ -21,7 +20,7 @@ related_publications: true
 
 ## Pitch
 
-You can read our pitch slides here PDF or optionally you can enjoy the slide show below.
+You can read our pitch slides here [PDF](/assets/pdf/quantum_hackathon_pitch.pdf) or optionally you can enjoy the slide show below.
 
 <div class="row mt-3">
     <div class="col-sm-4 mt-3 mt-md-0">
