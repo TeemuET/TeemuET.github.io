@@ -416,7 +416,7 @@ ninja.data = [{
               window.location.href = "/projects/APT_with_GPR/";
             },},{id: "projects-investigation-into-online-calibrated-bayesian-optimization",
           title: 'Investigation into Online Calibrated Bayesian Optimization',
-          description: "",
+          description: "An overview of my work at the Probabilistic Machine Learning Group, Summer 2025.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/calibrated_BO/";
             },},{id: "projects-sustainable-finance-in-the-quantum-era-hackathon",
