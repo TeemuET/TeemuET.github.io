@@ -21,8 +21,8 @@ The core of our solution is a Multi-Objective Portfolio Optimization model. Whil
 
 $$
 \begin{aligned}
-&\max &&\mu^T x-q\big(x^T\Sigma x\big)+\gamma \big(Ix)\\
-&\text{subject to }&&\sum_{i=1}^{N} x_i=1,
+\max& \quad \mu^T x-q\big(x^T\Sigma x\big)+\gamma \big(Ix)\\
+\text{subject to }& \sum_{i=1}^{N} x_i=1,
 \end{aligned}
 $$
 
