@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Investigation into Online Calibrated Bayesian Optimization
-description:
+description: An overview of my work at the Probabilistic Machine Learning Group, Summer 2025.
 img: assets/img/online_calib_illustration.jpg
 importance: 2
 category: work
