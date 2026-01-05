@@ -23,42 +23,44 @@ related_publications: true
 
 You can read our pitch slides here PDF or optionally you can enjoy the slide show below.
 
-<!-- Carousel container -->
-<div id="presentation-carousel" class="carousel slide" data-bs-ride="carousel">
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/assets/img/pitch-slide-1.jpg" class="d-block w-100" alt="Slide 1">
+<div class="row mt-3">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/pitch-slide-1.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="carousel-item">
-      <img src="/assets/img/pitch-slide-2.jpg" class="d-block w-100" alt="Slide 2">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/pitch-slide-2.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="carousel-item">
-      <img src="/assets/img/pitch-slide-3.jpg" class="d-block w-100" alt="Slide 3">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/pitch-slide-3.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="carousel-item">
-      <img src="/assets/img/pitch-slide-4.jpg" class="d-block w-100" alt="Slide 3">
+</div>
+<div class="row mt-3">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/pitch-slide-4.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="carousel-item">
-      <img src="/assets/img/pitch-slide-5.jpg" class="d-block w-100" alt="Slide 3">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/pitch-slide-5.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="carousel-item">
-      <img src="/assets/img/pitch-slide-6.jpg" class="d-block w-100" alt="Slide 3">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/pitch-slide-6.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="carousel-item">
-      <img src="/assets/img/pitch-slide-7.jpg" class="d-block w-100" alt="Slide 3">
+</div>
+<div class="row mt-3">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/pitch-slide-7.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="carousel-item">
-      <img src="/assets/img/pitch-slide-8.jpg" class="d-block w-100" alt="Slide 3">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/pitch-slide-8.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="carousel-item">
-      <img src="/assets/img/pitch-slide-9.jpg" class="d-block w-100" alt="Slide 3">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/pitch-slide-9.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="carousel-item">
-      <img src="/assets/img/pitch-slide-10.jpg" class="d-block w-100" alt="Slide 3">
+</div>
+<div class="row mt-3 justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/pitch-slide-10.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
-    <!-- Add more carousel-item divs for each of your slides -->
-  </div>
+</div>
 
   <!-- Previous/Next Controls -->
   <button class="carousel-control-prev" type="button" data-bs-target="#presentation-carousel" data-bs-slide="prev">
