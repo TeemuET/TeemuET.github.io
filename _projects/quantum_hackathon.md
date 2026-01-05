@@ -8,40 +8,56 @@ category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+ I was a part of a winning team at the Ultrahack hackathon titled "Sustainable Finance in the Quantum Era". In approximately 36 hours, I and my 4 teammates were able to formulate a business idea and excecute a technical implementation behind the concept. Our solution was a portfolio optimization and prediction platform intended to be integrated into a stock broker's website. We implemented both a classical optimization algorithm and one with Quantum Computing based on a [Nature article](https://www.nature.com/articles/s41598-023-45392-w). We also implemented a prediction tool based on geometric brownian motion and the Monte Carlo method and incorporated impact data and ESG scoring from [The Upright Project](https://www.uprightproject.com/?utm_source=google&utm_medium=search&utm_campaign=brand&utm_term=upright%20project&utm_campaign=CSR+%7C+manual&utm_source=adwords&utm_medium=ppc&hsa_acc=3032378754&hsa_cam=20030909980&hsa_grp=168345597304&hsa_ad=697647931150&hsa_src=g&hsa_tgt=kwd-569608573151&hsa_kw=upright%20project&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=20030909980&gclid=CjwKCAiA3-3KBhBiEiwA2x7FdMO5tp6HVncIDfTt4lAR0laSYWvHlmEFc5HWShy0d2cf8XhQX6xVcxoCZUsQAvD_BwE). My main area of responsibility was on the technical implementation and the implementing the research article in practice.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+You can read our pitch slides here PDF or optionally you can enjoy the slide show below.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<!-- Carousel container -->
+<div id="presentation-carousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/assets/img/pitch-slide-1.jpg" class="d-block w-100" alt="Slide 1">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/pitch-slide-2.jpg" class="d-block w-100" alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/pitch-slide-3.jpg" class="d-block w-100" alt="Slide 3">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/pitch-slide-4.jpg" class="d-block w-100" alt="Slide 3">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/pitch-slide-5.jpg" class="d-block w-100" alt="Slide 3">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/pitch-slide-6.jpg" class="d-block w-100" alt="Slide 3">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/pitch-slide-7.jpg" class="d-block w-100" alt="Slide 3">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/pitch-slide-8.jpg" class="d-block w-100" alt="Slide 3">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/pitch-slide-9.jpg" class="d-block w-100" alt="Slide 3">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/pitch-slide-10.jpg" class="d-block w-100" alt="Slide 3">
+    </div>
+    <!-- Add more carousel-item divs for each of your slides -->
+  </div>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+  <!-- Previous/Next Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#presentation-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#presentation-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
 You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
