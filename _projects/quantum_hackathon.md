@@ -25,6 +25,7 @@ $$
 &\text{subject to }&&\sum_{i=1}^{N} x_i=1,
 \end{aligned}
 $$
+
 where $\mu$ is the vector of mean asset returns for each asset $i$, $\Sigma$ is the covariance matrix between returns of different assets, $q$ is a parameter expressing the risk attitude of the investor and $\gamma$ a parameter expressing the weight of sustainability relative to financial returns.
 
 classical vs quantum
