@@ -401,8 +401,8 @@ ninja.data = [{
             },},{id: "news-we-won-the-sustainable-finance-in-the-quantum-era-hackathon",
           title: 'We won the Sustainable Finance in the Quantum Era Hackathon!',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-announcement-2",
+          title: 'Announcement_2',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
