@@ -8,7 +8,7 @@ category: work
 ---
 
 ## Intro
-During the summer of 2025 I got the opportunity to work for the Probabilistic Machine Learning Group (Aalto Department of Computer Science) under the supervision of Samuel Kaski and Marshal Sinaga. My internship aimed at finding and identifying promising avenues in improving robustness of Bayesian Optimization (BO). 
+During the summer of 2025 I got the opportunity to work for the Probabilistic Machine Learning Group (Aalto Department of Computer Science) under the supervision of Prof. Samuel Kaski and pHd candidate Marshal Sinaga. My internship aimed at finding and identifying promising avenues in improving robustness of Bayesian Optimization (BO). 
 
 BO is an optimization method... brief description of BO
 
