@@ -9,7 +9,7 @@ related_publications: true
 ---
 
 ## Introduction
-During the summer of 2025, I served as a Research Assistant within the **Probabilistic Machine Learning Group** at Aalto University’s Department of Computer Science. Working under the supervision of Prof. Samuel Kaski. and doctoral student Marshal Sinaga, my research focused on enhancing the robustness of **Bayesian Optimization (BO)**. Specifically, I investigated how model calibration and conformal prediction could be used to provide more reliable uncertainty quantification during the optimization of expensive black-box functions.
+During the summer of 2025, I served as a Research Assistant within the **Probabilistic Machine Learning Group** at Aalto University’s Department of Computer Science. Working under the supervision of Prof. Samuel Kaski and doctoral student Marshal Sinaga, my research focused on enhancing the robustness of **Bayesian Optimization (BO)**. Specifically, I investigated how model calibration and conformal prediction could be used to provide more reliable uncertainty quantification during the optimization of expensive black-box functions.
 
 The fundamental objective in BO is to find the global optimum of an expensive-to-evaluate black-box function
 
@@ -17,7 +17,7 @@ $$
 x^*=\arg \max_{x\in\mathcal{X}} f(x).
 $$
 
-The black-box function $f$ is approximated with a surrogate model (most often a Gaussian Process (GP)) which is iteratively updated as new data points are sampled via an **acquisition function**. Acquisition functions balance the exploration-exploitation trade-off. That is, we must exploit regions where the surrogate predicts high objective values while simultaneously exploring regions with high predictive uncertainty where a global optimum might remain hidden. In this context, accurate uncertainty quantification is essential for decision-making and the performance of BO. **My research specifically addressed how to guarantee BO performance bounds even under model misspecification, primarily by exploring the trade-off between calibration and sharpness. While the project involved a deep dive into the literature of conformal prediction, my core experimental work focused on implementing and evaluating online calibration strategies.**
+The black-box function $f$ is approximated with a surrogate model (most often a Gaussian Process (GP)) which is iteratively updated as new data points are sampled via an **acquisition function**. Acquisition functions balance the exploration-exploitation trade-off. That is, we must exploit regions where the surrogate predicts high objective values while exploring regions with high predictive uncertainty where a global optimum might remain hidden. In this context, accurate uncertainty quantification is essential for decision-making and the performance of BO. **My research specifically addressed how to guarantee BO performance bounds even under model misspecification, primarily by exploring the trade-off between calibration and sharpness. While the project involved a deep dive into the literature of conformal prediction, my core experimental work focused on implementing and evaluating online calibration strategies.**
 
 ## Research Questions
 After a comprehensive literature review, the research shifted toward addressing specific gaps in how online calibration affects optimization performance. My work aimed to resolve the following three questions:
