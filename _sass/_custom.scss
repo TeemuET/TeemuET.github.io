@@ -7,8 +7,7 @@ blockquote {
 }
 
 
-.col-sm img {
-  width: 100%; /* Ensure images scale to their column width */
-  height: 200px; /* Force a fixed height for uniformity */
-  object-fit: cover; /* Crop edges to fit the container */
+.uniform-image-grid img {
+  width: 100%;
+  object-fit: cover; // This crops the image to fit, preventing distortion
 }
