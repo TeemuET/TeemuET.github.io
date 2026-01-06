@@ -3,7 +3,7 @@ layout: page
 permalink: /repositories/
 title: Repositories
 description:
-nav: true
+nav: false
 nav_order: 4
 ---
 
@@ -37,7 +37,7 @@ nav_order: 4
 
 {% if site.data.repositories.github_repos %}
 
-## GitHub Repositories
+## Repositories
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.github_repos %}
@@ -45,3 +45,4 @@ nav_order: 4
   {% endfor %}
 </div>
 {% endif %}
+
