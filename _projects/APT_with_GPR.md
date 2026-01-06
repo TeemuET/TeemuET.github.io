@@ -27,9 +27,47 @@ Traditional APT reconstruction relies on geometric algorithms that assume linear
         {% include figure.liquid path="assets/img/GB_detector_map_roll.png" title="Example image 2" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
 <div class="caption">
     An illustration of the atom probe imaging setup (left) and simulated evaporation events on the detector (right).
 </div>
+
+<div class="row row-equal-height-grid">
+    <!-- Left column for the 2/3 image -->
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% raw %}{% include figure.liquid path="assets/img/imaging.png" title="Atom probe imaging setup" class="img-fluid rounded z-depth-1" %}{% endraw %}
+    </div>
+    <!-- Right column for the two stacked 1/3 images -->
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% raw %}{% include figure.liquid path="assets/img/GB_detector_hits_roll.png" title="Example image 1" class="img-fluid rounded z-depth-1 mb-3" %}{% endraw %}
+        {% raw %}{% include figure.liquid path="assets/img/GB_detector_map_roll.png" title="Example image 2" class="img-fluid rounded z-depth-1" %}{% endraw %}
+    </div>
+</div>
+<div class="caption">
+    An illustration of the atom probe imaging setup (left) and simulated evaporation events on the detector (right).
+</div>
+
+
+
+<div class="caption">
+    An illustration of the atom probe imaging setup (left) and simulated evaporation events on the detector (right).
+</div>
+
+<div class="row row-equal-height-grid">
+    <!-- Left column for the 2/3 image -->
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/imaging.png" title="Atom probe imaging setup" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <!-- Right column for the two stacked 1/3 images -->
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/GB_detector_hits_roll.png" title="Example image 1" class="img-fluid rounded z-depth-1 mb-3" %}
+        {% include figure.liquid path="assets/img/GB_detector_map_roll.png" title="Example image 2" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    An illustration of the atom probe imaging setup (left) and simulated evaporation events on the detector (right).
+</div>
+
 
 > The aim of this thesis is to test and assess the performance of **Gaussian process regression (GPR)** in APT data reconstruction, while providing a thorough mathematical review of GPR. GPR provides a highly flexible and probabilistic method that can capture, in theory, the uncertainty inherent in field evaporation events. The performance of GPR is estimated by performing data reconstruction for two crystallographic specimens with different grain structures, where both specimens have been evaporated with a simulation model that incorporates theorized field evaporation events.
 

@@ -5,3 +5,22 @@
 blockquote {
   font-size: 0.5rem; // Resets the blockquote font size to match regular text.
 }
+
+.row-equal-height-grid {
+  // Make sure all direct child columns stretch to the same height
+  & > [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // Make the figure and image inside the columns stretch
+  .figure,
+  img {
+    height: 100%;
+  }
+
+  // Prevent the image from being distorted by cropping it to fit
+  img {
+    object-fit: cover;
+  }
+}
