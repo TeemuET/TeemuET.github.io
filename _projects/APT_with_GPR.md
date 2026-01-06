@@ -23,8 +23,8 @@ Traditional APT reconstruction relies on geometric algorithms that assume linear
     </div>
     <!-- Right column for the two stacked 1/3 images -->
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="Example image 1" class="img-fluid rounded z-depth-1 mb-3" %}
-        {% include figure.liquid path="assets/img/11.jpg" title="Example image 2" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/GB_detector_hits_roll.png" title="Example image 1" class="img-fluid rounded z-depth-1 mb-3" %}
+        {% include figure.liquid path="assets/img/GB_detector_map_roll.png" title="Example image 2" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
