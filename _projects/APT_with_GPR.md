@@ -17,12 +17,18 @@ Traditional APT reconstruction relies on geometric algorithms that assume linear
 > **Atom probe tomography (APT)** is an imaging technique that combines precise sub-nanometer imaging of materials with simultaneous compositional analysis {% cite gault_atom_2021 %}. APT provides a solution to one of the main challenges of material science: understanding the properties of materials at an atomic scale. This level of understanding has become increasingly essential in the development of microelectronics, and APT has seen important application in the development of semiconductors {% cite giddings_industrial_2018 %}. In APT, a specimen of interest is evaporated onto a detector by the method of field evaporation. The resulting data gathered on the detectoris utilized in the spatial and chemical reconstruction of the specimen. Reconstructing the three-dimensional (3D) lattice of the evaporated specimen is a central part in determining the precision and robustness of APT. 
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/imaging.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    <!-- Left column for the 2/3 image -->
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/imaging.png" title="Atom probe imaging setup" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <!-- Right column for the two stacked 1/3 images -->
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/6.jpg" title="Example image 1" class="img-fluid rounded z-depth-1 mb-3" %}
+        {% include figure.liquid path="assets/img/11.jpg" title="Example image 2" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    An illustration of the atom probe imaging set up.
+    An illustration of the atom probe imaging setup (left) and simulated evaporation events on the detector (right).
 </div>
 
 > The aim of this thesis is to test and assess the performance of **Gaussian process regression (GPR)** in APT data reconstruction, while providing a thorough mathematical review of GPR. GPR provides a highly flexible and probabilistic method that can capture, in theory, the uncertainty inherent in field evaporation events. The performance of GPR is estimated by performing data reconstruction for two crystallographic specimens with different grain structures, where both specimens have been evaporated with a simulation model that incorporates theorized field evaporation events.
