@@ -81,9 +81,8 @@ The following gallery highlights parts of the project, illustrating the transiti
     </div>
 </div>
 
-
 ## Manuscript
-In the research manuscript this work was refined and extended to comparisons between traditional APT data reconstruction and GPR.
+In the research manuscript this work was refined and extended to comparisons between traditional APT data reconstruction and GPR with additional statistical analysis of error distributions.
 
 ## Source Code
-Will be available once published [here]().
+The code will be [here]() once the manuscript is published,
