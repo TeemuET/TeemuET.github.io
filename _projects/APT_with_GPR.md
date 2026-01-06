@@ -17,13 +17,13 @@ Traditional APT reconstruction relies on geometric algorithms that assume linear
 > **Atom probe tomography (APT)** is an imaging technique that combines precise sub-nanometer imaging of materials with simultaneous compositional analysis {% cite gault_atom_2021 %}. APT provides a solution to one of the main challenges of material science: understanding the properties of materials at an atomic scale. This level of understanding has become increasingly essential in the development of microelectronics, and APT has seen important application in the development of semiconductors {% cite giddings_industrial_2018 %}. In APT, a specimen of interest is evaporated onto a detector by the method of field evaporation. The resulting data gathered on the detectoris utilized in the spatial and chemical reconstruction of the specimen. Reconstructing the three-dimensional (3D) lattice of the evaporated specimen is a central part in determining the precision and robustness of APT. 
 
 <div class="row mt-3">
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/imaging.png" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm-3 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/GB_detector_hits_roll.png" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm-3 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/GB_detector_map_roll.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
