@@ -3,24 +3,33 @@
 }
 
 blockquote {
-  font-size: 0.5rem; // Resets the blockquote font size to match regular text.
+  font-size: 1rem; // Resets the blockquote font size to match regular text.
 }
 
 .row-equal-height-grid {
-  // Make sure all direct child columns stretch to the same height
-  & > [class*="col-"] {
+  display: flex;
+  flex-wrap: wrap;
+
+  // Target the direct column children
+  & > .col-sm-8,
+  & > .col-sm-4 {
     display: flex;
     flex-direction: column;
   }
 
-  // Make the figure and image inside the columns stretch
-  .figure,
-  img {
+  // Force the figure wrapper to stretch
+  .figure {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     height: 100%;
   }
 
-  // Prevent the image from being distorted by cropping it to fit
-  img {
-    object-fit: cover;
+  // Force the link and image to stretch
+  .figure a,
+  .figure img {
+    flex-grow: 1;
+    height: 100%;
+    object-fit: cover; // Crop image to fit, prevent distortion
   }
 }
