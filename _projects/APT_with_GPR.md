@@ -16,52 +16,15 @@ Traditional APT reconstruction relies on geometric algorithms that assume linear
 
 > **Atom probe tomography (APT)** is an imaging technique that combines precise sub-nanometer imaging of materials with simultaneous compositional analysis {% cite gault_atom_2021 %}. APT provides a solution to one of the main challenges of material science: understanding the properties of materials at an atomic scale. This level of understanding has become increasingly essential in the development of microelectronics, and APT has seen important application in the development of semiconductors {% cite giddings_industrial_2018 %}. In APT, a specimen of interest is evaporated onto a detector by the method of field evaporation. The resulting data gathered on the detectoris utilized in the spatial and chemical reconstruction of the specimen. Reconstructing the three-dimensional (3D) lattice of the evaporated specimen is a central part in determining the precision and robustness of APT. 
 
-<div class="row">
-    <!-- Left column for the 2/3 image -->
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/imaging.png" title="Atom probe imaging setup" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <!-- Right column for the two stacked 1/3 images -->
+<div class="row mt-3">
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/GB_detector_hits_roll.png" title="Example image 1" class="img-fluid rounded z-depth-1 mb-3" %}
-        {% include figure.liquid path="assets/img/GB_detector_map_roll.png" title="Example image 2" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/imaging.png" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
-
-<div class="caption">
-    An illustration of the atom probe imaging setup (left) and simulated evaporation events on the detector (right).
-</div>
-
-<div class="row row-equal-height-grid">
-    <!-- Left column for the 2/3 image -->
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% raw %}{% include figure.liquid path="assets/img/imaging.png" title="Atom probe imaging setup" class="img-fluid rounded z-depth-1" %}{% endraw %}
-    </div>
-    <!-- Right column for the two stacked 1/3 images -->
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% raw %}{% include figure.liquid path="assets/img/GB_detector_hits_roll.png" title="Example image 1" class="img-fluid rounded z-depth-1 mb-3" %}{% endraw %}
-        {% raw %}{% include figure.liquid path="assets/img/GB_detector_map_roll.png" title="Example image 2" class="img-fluid rounded z-depth-1" %}{% endraw %}
+        {% include figure.liquid path="assets/img/GB_detector_hits_roll.png" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
-<div class="caption">
-    An illustration of the atom probe imaging setup (left) and simulated evaporation events on the detector (right).
-</div>
-
-
-
-<div class="caption">
-    An illustration of the atom probe imaging setup (left) and simulated evaporation events on the detector (right).
-</div>
-
-<div class="row row-equal-height-grid">
-    <!-- Left column for the 2/3 image -->
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/imaging.png" title="Atom probe imaging setup" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <!-- Right column for the two stacked 1/3 images -->
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/GB_detector_hits_roll.png" title="Example image 1" class="img-fluid rounded z-depth-1 mb-3" %}
-        {% include figure.liquid path="assets/img/GB_detector_map_roll.png" title="Example image 2" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/GB_detector_map_roll.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -70,6 +33,54 @@ Traditional APT reconstruction relies on geometric algorithms that assume linear
 
 
 > The aim of this thesis is to test and assess the performance of **Gaussian process regression (GPR)** in APT data reconstruction, while providing a thorough mathematical review of GPR. GPR provides a highly flexible and probabilistic method that can capture, in theory, the uncertainty inherent in field evaporation events. The performance of GPR is estimated by performing data reconstruction for two crystallographic specimens with different grain structures, where both specimens have been evaporated with a simulation model that incorporates theorized field evaporation events.
+
+The following gallery highlights parts of the project, illustrating the transition from theory and raw detector data to 3D atomic reconstructions and crystallographic analysis.
+
+<div class="row mt-3">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/prior.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/posterior.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/GB_specimen2(1).png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/001-true.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/001-m-rec.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/001-displacement-rbf-final.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/GB_specimen_true_ID_final.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/GB_specimen_matern_ID_final.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/GB_specimen_displacement_matern2.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/001-voxel-true-final(1).png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/001-voxel-rbf-final.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/simple-fourier-rbf.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 
 ## Manuscript
 In the research manuscript this work was refined and extended to comparisons between traditional APT data reconstruction and GPR.
