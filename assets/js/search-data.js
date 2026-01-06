@@ -409,7 +409,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-gaussian-process-regression-applied-to-atom-probe-tomography-data-reconstruction",
           title: 'Gaussian Process Regression Applied to Atom Probe Tomography Data Reconstruction',
-          description: "",
+          description: "An overview of my work at the Complex Systems and Materials Group",
           section: "Projects",handler: () => {
               window.location.href = "/projects/APT_with_GPR/";
             },},{id: "projects-investigation-into-online-calibrated-bayesian-optimization",
