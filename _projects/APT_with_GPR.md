@@ -36,7 +36,7 @@ Traditional APT reconstruction relies on geometric algorithms that assume linear
 
 The following gallery highlights parts of the project, illustrating the transition from theory and raw detector data to 3D atomic reconstructions and crystallographic analysis.
 
-<div class="row mt-3">
+<div class="row mt-3 uniform-image-grid">
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/prior.png" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -47,7 +47,7 @@ The following gallery highlights parts of the project, illustrating the transiti
         {% include figure.liquid path="assets/img/GB_specimen2(1).png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="row mt-3">
+<div class="row mt-3 uniform-image-grid">
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/001-true.png" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -58,7 +58,7 @@ The following gallery highlights parts of the project, illustrating the transiti
         {% include figure.liquid path="assets/img/001-displacement-rbf-final.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="row mt-3">
+<div class="row mt-3 uniform-image-grid">
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/GB_specimen_true_ID_final.png" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -69,7 +69,7 @@ The following gallery highlights parts of the project, illustrating the transiti
         {% include figure.liquid path="assets/img/GB_specimen_displacement_matern2.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="row mt-3">
+<div class="row mt-3 uniform-image-grid">
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/001-voxel-true-final(1).png" class="img-fluid rounded z-depth-1" %}
     </div>

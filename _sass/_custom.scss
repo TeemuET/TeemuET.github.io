@@ -25,6 +25,29 @@ blockquote {
     height: 100%;
   }
 
+  .uniform-image-grid {
+  .figure {
+    position: relative;
+    width: 100%;
+    // This padding-top creates a 4:3 aspect ratio box (75% = 3 / 4).
+    // Change to 56.25% for a 16:9 aspect ratio.
+    padding-top: 75%; 
+    height: 0;
+    overflow: hidden;
+  }
+
+  .figure a,
+  .figure img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // This crops the image to fit the box, rather than stretching it.
+    object-fit: cover; 
+  }
+}
+
   // Force the link and image to stretch
   .figure a,
   .figure img {
