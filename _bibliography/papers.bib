@@ -45,6 +45,10 @@
       year={2026},
       selected={true},
       preview={arXiv_logo.png},
+      paper={https://arxiv.org/abs/2605.10572},
+      abstract={
+      Bayesian optimization (BO) is a widely used framework for optimizing expensive black-box functions, commonly based on Gaussian process (GP) surrogate models. Its effectiveness relies on uncertainty quantification that is both sharp (informative) and well-calibrated along the BO trajectory. In practice, GP kernel hyperparameters are unknown and are refit online from sequentially collected (non-i.i.d.) data, which can yield miscalibrated or overly conservative uncertainty and lies outside the fixed-kernel assumptions of standard BO regret theory. We propose Online Sharp-Calibrated Bayesian Optimization (OSCBO), a BO algorithm that adaptively balances GP sharpness and calibration by casting hyperparameter selection as a constrained online-learning problem. We also show that OSCBO preserves sublinear regret bounds by leveraging the theoretical guarantees of the underlying online learning algorithm. Empirically, OSCBO performs competitively across synthetic and real-world benchmarks, ranking among the strongest methods in final simple regret while maintaining robust cumulative-regret behavior.
+      },
       eprint={2605.10572},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
@@ -66,6 +70,7 @@
   abstract = {We propose Gaussian process regression, a flexible Bayesian inference approach, as a method to enhance atom probe tomography data reconstruction. Simulated evaporation of single-crystal and polycrystalline specimens, incorporating surface diffusion effects, was reconstructed using radial basis function and Matérn kernels. Comparison with the standard wide field-of-view reconstruction algorithm shows that both kernels outperform traditional geometry-based reconstruction, with the Matérn kernel proving more effective for long-range periodic datasets. This work highlights the potential of Bayesian inference in atom probe tomography reconstruction and identifies realistic pathways toward its application to experimental data.},
   issn = {1431-9276},
   doi = {10.1093/mam/ozag027},
+  paper = {https://doi.org/10.1093/mam/ozag027},
   url = {https://doi.org/10.1093/mam/ozag027},
   eprint = {https://academic.oup.com/mam/article-pdf/32/2/ozag027/68165312/ozag027.pdf},
 }
