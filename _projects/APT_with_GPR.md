@@ -9,7 +9,7 @@ related_publications: true
 ---
 
 ## Introduction
-I completed my Bachelor's thesis on the topic of Gaussian Process Regression (GPR) in Atom Probe Tomography (APT) data reconstruction in the summer of 2024 at the Complex Systems and Materials Group at Aalto University’s Department of Applied Physics. This work continued after my thesis and culminated in a research manuscript which is currently under review. A more complete view of the project can be gained from my [Bachelor's thesis](/assets/pdf/BScThesis.pdf).
+I completed my Bachelor's thesis on the topic of Gaussian Process Regression (GPR) in Atom Probe Tomography (APT) data reconstruction in the summer of 2024 at the Complex Systems and Materials Group at Aalto University’s Department of Applied Physics. This work continued after my thesis and resulted in a research manuscript published in *Microscopy and Microanalysis* For a detailed look at the initial stages of this project, please refer to my [Bachelor's thesis](/assets/pdf/BScThesis.pdf) The finalized and polished results can be found in the published [article](https://doi.org/10.1093/mam/ozag027). Note that the images and explanations below are drawn primarily from my thesis, as the manuscript had not yet been published when this page was created.
 
 ### Problem
 Traditional APT reconstruction relies on geometric algorithms that assume linear ion flight paths. However, physical evaporation is often non-linear and probabilistic. To contextualize the importance of this imaging technique and the motivation for using machine learning, the following short excerpts and figures from my thesis describe the APT process:
