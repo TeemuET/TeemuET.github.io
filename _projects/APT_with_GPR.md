@@ -9,12 +9,18 @@ related_publications: true
 ---
 
 ## Introduction
-I completed my Bachelor's thesis on the topic of Gaussian Process Regression (GPR) in Atom Probe Tomography (APT) data reconstruction in the summer of 2024 at the Complex Systems and Materials Group at Aalto University’s Department of Applied Physics. This work continued after my thesis and resulted in a research manuscript published in *Microscopy and Microanalysis* For a detailed look at the initial stages of this project, please refer to my [Bachelor's thesis](/assets/pdf/BScThesis.pdf) The finalized and polished results can be found in the published [article](https://doi.org/10.1093/mam/ozag027). Note that the images and explanations below are drawn primarily from my thesis, as the manuscript had not yet been published when this page was created.
 
-### Problem
-Traditional APT reconstruction relies on geometric algorithms that assume linear ion flight paths. However, physical evaporation is often non-linear and probabilistic. To contextualize the importance of this imaging technique and the motivation for using machine learning, the following short excerpts and figures from my thesis describe the APT process:
+In the summer of 2024, I joined the Complex Systems and Materials Group at Aalto University to write my Bachelor's thesis on applying Gaussian Process Regression (GPR) to Atom Probe Tomography (APT). That initial research evolved into a much larger project, leading to a first-authored paper published in *Microscopy and Microanalysis* (August 2026).
 
-> **Atom probe tomography (APT)** is an imaging technique that combines precise sub-nanometer imaging of materials with simultaneous compositional analysis {% cite gault_atom_2021 %}. APT provides a solution to one of the main challenges of material science: understanding the properties of materials at an atomic scale. This level of understanding has become increasingly essential in the development of microelectronics, and APT has seen important application in the development of semiconductors {% cite giddings_industrial_2018 %}. In APT, a specimen of interest is evaporated onto a detector by the method of field evaporation. The resulting data gathered on the detectoris utilized in the spatial and chemical reconstruction of the specimen. Reconstructing the three-dimensional (3D) lattice of the evaporated specimen is a central part in determining the precision and robustness of APT. 
+You can read the full, peer-reviewed article [here](https://doi.org/10.1093/mam/ozag027). 
+
+However, since the manuscript is quite dense, I wanted to provide a more relaxed highlight reel here. Below are some of the core concepts and cool visual results from the project!
+
+### The Problem: The Ions Don't Fly Straight
+
+Atom probe tomography (APT) is an imaging technique that provides sub-nanometer, 3D compositional analysis of materials {% cite gault_atom_2021 %}. It is useful in modern material science and semiconductor development {% cite giddings_industrial_2018 %}. 
+
+In APT, we evaporate a specimen onto a detector and try to reverse-engineer where the atoms originally came from. Traditional reconstruction algorithms (like the standard WFOV method) assume these atoms fly in perfectly straight, predictable lines. In reality, atoms are messy. They "roll up" and move laterally across the surface before evaporating, creating non-linear, probabilistic flight paths that distort the final 3D image. Below is an illustration of the imaging set up and of simulated evaporation events on the detector. 
 
 <div class="row mt-3 uniform-image-grid">
     <div class="col-sm-4 mt-3 mt-md-0">
@@ -32,57 +38,92 @@ Traditional APT reconstruction relies on geometric algorithms that assume linear
 </div>
 
 
-> The aim of this thesis is to test and assess the performance of **Gaussian process regression (GPR)** in APT data reconstruction, while providing a thorough mathematical review of GPR. GPR provides a highly flexible and probabilistic method that can capture, in theory, the uncertainty inherent in field evaporation events. The performance of GPR is estimated by performing data reconstruction for two crystallographic specimens with different grain structures, where both specimens have been evaporated with a simulation model that incorporates theorized field evaporation events.
+### The Solution: Probabilistic Machine Learning
 
-The following gallery highlights parts of the project, illustrating the transition from theory and raw detector data to 3D atomic reconstructions and crystallographic analysis.
-
-<div class="row mt-3 uniform-image-grid">
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/prior.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/posterior.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/GB_specimen2(1).png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="row mt-3 uniform-image-grid">
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/001-true.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/001-m-rec.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/001-displacement-rbf-final.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="row mt-3 uniform-image-grid">
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/GB_specimen_true_ID_final.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/GB_specimen_matern_ID_final.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/GB_specimen_displacement_matern2.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="row mt-3 uniform-image-grid">
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/001-voxel-true-final(1).png" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/001-voxel-rbf-final.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/simple-fourier-rbf.png" class="img-fluid rounded z-depth-1" %}
+<div class="float-right ml-4 mb-3 rounded z-depth-1 p-2" style="width: 35%; min-width: 250px; background-color: #ffffff;">
+    {% include figure.liquid path="assets/img/figure02_workflow.svg" class="img-fluid" %}
+    <div class="caption mt-2 mb-0" style="font-size: 0.85em; line-height: 1.3;">
+        Our reconstruction workflow: Fed simulated detector hits into a multitask GPR model running on high-memory GPUs.
     </div>
 </div>
 
-## Manuscript
-In the research manuscript this work was refined and extended to comparisons between traditional APT data reconstruction and GPR with additional statistical analysis of error distributions.
+To address the geometric limitations of standard algorithms, we introduced a probabilistic machine learning approach using **Gaussian Process Regression (GPR)**. You can view our reconstruction workflow on the right.
 
-## Source Code
-The code will be [here]() once the manuscript is published,
+To handle the massive datasets inherent to APT, we scaled the GPR model training on an HPC cluster utilizing high-memory GPU acceleration.
+
+### Case Study 1: The Single Crystal
+
+We first tested the model on a simulated single-crystal specimen. In the heatmap below, darker colors mean the atom was placed almost exactly where it belongs, while yellow indicates higher error. 
+
+<div class="row mt-3">
+    <div class="col-sm-10 mt-3 mt-md-0 mx-auto">
+        {% include figure.liquid path="assets/img/figure04_single_crystal_err.svg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    (a) The reconstructed crystal. (b) A zoomed-in look at a specific surface terrace. (c) The error distribution proving GPR (blue) had significantly smaller errors than the traditional WFOV method (orange). Note the logarithmic scale!
+</div>
+
+As you can see in the graph on the right, the GPR model's error distribution was nearly two orders of magnitude better than the traditional algorithm. 
+
+But to really prove our model worked, we needed to look inside the crystal structure. We extracted a tiny 3D slice (a voxel) from the apex of the tip to see if the GPR model successfully rebuilt the actual atomic planes:
+
+<div class="row mt-3">
+    <div class="col-sm-11 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/figure05_voxels.svg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Zooming in on the atomic planes: (a) The original lattice, (b) our GPR reconstruction, and (c) the traditional WFOV reconstruction.
+</div>
+
+The traditional method (c) bends and distorts the atomic planes due to the non-linear evaporation paths. Our GPR model (b) learned to compensate for those distortions, keeping the planes flat and perfectly preserving the long-range crystallographic order (which we verified using the Fourier transforms in d, e, and f).
+
+---
+
+## Case Study 2: Grain Boundaries in Polycrystals
+
+Homogeneous, perfect crystals are relatively easy, but material scientists actually care about defects. Hence, we also tested a specimen with a grain boundary, that is, two differently oriented crystal structures joined together at a grain boundary.
+
+<div class="row mt-3">
+    <div class="col-sm-9 mt-3 mt-md-0 mx-auto">
+        {% include figure.liquid path="assets/img/figure07_polycrystalline.svg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Reconstructing a polycrystalline specimen. The highest errors are strictly isolated to the chaotic grain boundary interface (the yellow stripe).
+</div>
+
+
+<div class="float-right ml-4 mb-3 rounded z-depth-1 p-3" style="width: 35%; min-width: 250px; background-color: #ffffff;">
+    
+    <!-- Top Image -->
+    {% include figure.liquid path="assets/img/figure09_grains.svg" class="img-fluid mb-3" %}
+    
+    <!-- Bottom Image -->
+    {% include figure.liquid path="assets/img/figure10_gb.svg" class="img-fluid" %}
+    
+    <!-- Shared Caption -->
+    <div class="caption mt-3 mb-0" style="font-size: 0.85em; line-height: 1.3;">
+        <strong>Top:</strong> Voxels taken from the two different grain orientations.<br>
+        <strong>Bottom:</strong> A voxel taken directly from the chaotic grain boundary interface.
+    </div>
+</div>
+
+Even with the chaotic lattice mismatch at the grain boundary, the GPR model successfully reconstructed the specimen. 
+
+When we zoom into the voxels for this specimen, you can see how the differently oriented crystals meet. The model had to reconstruct two entirely different crystal orientations simultaneously, alongside the chaotic interface where they meet.
+
+By treating Atom Probe Tomography as a statistical machine learning problem rather than a pure geometry problem, we were able to improve spatial accuracy.
+
+---
+
+## Challenges & Limitations
+
+While GPR vastly outperformed traditional geometric reconstruction, this approach comes with its own set of challenges that need to be solved before it could be utilized for experimental data:
+
+* **Scalability:** Exact Gaussian Process Regression scales poorly with dataset size ($O(N^3)$ complexity). Our current models were limited to 200k–500k atoms and required an 80 GB GPU running for 14 hours. Scaling this to the millions of atoms found in real APT datasets will require approximate methods like Sparse GPR or inducing-point techniques.
+* **Hyperparameter Rigidity at Boundaries:** We found that a single smoothness parameter (the Matérn $\nu$) struggled slightly right at the grain boundary. Because the lattice mismatch causes a dramatic, abrupt change in the data's smoothness, a stationary kernel can't adapt perfectly to that highly localized chaos, leaving a thin layer of higher error. 
+* **Ground Truth::** Right now, the model learns from a known simulated ground truth. To deploy this on pure, unknown experimental data, we would likely need to use amortized inference, i.e., training neural networks to approximate the GPR posterior so they can recognize statistical signatures across entirely new crystallographic orientations.
+
+Despite these hurdles, treating APT as a probabilistic inverse problem rather than a rigid geometric one opens the door to more accurate data-driven reconstructions.
