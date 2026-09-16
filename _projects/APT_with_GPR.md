@@ -2,7 +2,7 @@
 layout: page
 title: Gaussian Process Regression Applied to Atom Probe Tomography Data Reconstruction
 description: An overview of my work at the Complex Systems and Materials Group
-img: assets/img/GPR_illustration.jpg
+img: assets/img/figure04_single_crystal_err.svg
 importance: 3
 category: work
 related_publications: true
